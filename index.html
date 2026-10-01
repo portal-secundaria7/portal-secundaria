@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal informativo para padres de familia de la Escuela Secundaria.">
+  <title>Secundaria | Portal para Padres</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="brand-mark">S</span>
+      <span><strong>Escuela Secundaria</strong><small>Portal para Padres</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#escuela">La escuela</a>
+      <a href="#avisos">Avisos</a>
+      <a href="#calendario">Calendario</a>
+      <a href="#documentos">Documentos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">INFORMACIÓN PARA PADRES DE FAMILIA</span>
+      <h1>Todo lo que necesitas saber sobre nuestra escuela.</h1>
+      <p>Consulta avisos, fechas importantes, documentos, actividades y medios de contacto desde un solo lugar.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#avisos">Ver avisos</a>
+        <a class="btn secondary" href="#calendario">Consultar calendario</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <span class="status-dot"></span>
+      <span>AVISO DESTACADO</span>
+      <h3>Reunión general con padres de familia</h3>
+      <p>Consulta la fecha, horario y documentación correspondiente.</p>
+      <a href="#avisos">Ver información →</a>
+    </div>
+  </div>
+</section>
+
+<section class="quick-links">
+  <div class="container quick-grid">
+    <a href="#avisos"><span>📢</span><div><strong>Avisos</strong><small>Comunicados recientes</small></div></a>
+    <a href="#calendario"><span>📅</span><div><strong>Calendario</strong><small>Fechas importantes</small></div></a>
+    <a href="#documentos"><span>📄</span><div><strong>Documentos</strong><small>Formatos y circulares</small></div></a>
+    <a href="#contacto"><span>☎️</span><div><strong>Contacto</strong><small>Comunícate con nosotros</small></div></a>
+  </div>
+</section>
+
+<section id="avisos" class="section">
+  <div class="container">
+    <div class="section-heading"><div><span class="eyebrow">COMUNICACIÓN</span><h2>Avisos importantes</h2></div><button class="text-btn" id="showAllNotices">Ver todos</button></div>
+    <div class="notice-grid" id="noticeGrid"></div>
+  </div>
+</section>
+
+<section id="escuela" class="section soft">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow">CONÓCENOS</span>
+      <h2>La escuela</h2>
+      <p>Este espacio presenta información institucional para que las familias conozcan nuestra comunidad educativa, sus servicios y canales de atención.</p>
+      <div class="facts">
+        <div><strong>Horario</strong><span>Lunes a viernes · 7:00–14:00</span></div>
+        <div><strong>Niveles</strong><span>1.º, 2.º y 3.º de secundaria</span></div>
+        <div><strong>Atención a padres</strong><span>Previa cita con control escolar</span></div>
+      </div>
+    </div>
+    <div class="info-card">
+      <h3>Misión</h3>
+      <p>Brindar una educación integral que favorezca el aprendizaje, la convivencia y el desarrollo de nuestros estudiantes.</p>
+      <h3>Visión</h3>
+      <p>Consolidar una comunidad escolar participativa, respetuosa y comprometida con la formación de adolescentes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="calendario" class="section">
+  <div class="container">
+    <div class="section-heading"><div><span class="eyebrow">AGENDA ESCOLAR</span><h2>Próximas fechas</h2></div></div>
+    <div class="calendar-list" id="calendarList"></div>
+  </div>
+</section>
+
+<section id="documentos" class="section soft">
+  <div class="container">
+    <div class="section-heading"><div><span class="eyebrow">RECURSOS</span><h2>Documentos para padres</h2></div></div>
+    <div class="document-grid" id="documentGrid"></div>
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <div class="container two-col">
+    <div>
+      <span class="eyebrow">ESTAMOS PARA AYUDARTE</span>
+      <h2>Contacto</h2>
+      <div class="contact-list">
+        <p>📍 <strong>Dirección:</strong> Calle de la Escuela #100, Colonia Centro</p>
+        <p>☎️ <strong>Teléfono:</strong> (000) 000-0000</p>
+        <p>✉️ <strong>Correo:</strong> contacto@escuela.edu.mx</p>
+        <p>🕐 <strong>Horario:</strong> Lunes a viernes, 7:00–14:00</p>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <h3>Enviar mensaje</h3>
+      <label>Nombre<input required name="nombre" placeholder="Tu nombre"></label>
+      <label>Correo<input required type="email" name="correo" placeholder="correo@ejemplo.com"></label>
+      <label>Mensaje<textarea required name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea></label>
+      <button class="btn primary" type="submit">Enviar mensaje</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong>Escuela Secundaria</strong><p>Portal informativo para padres de familia.</p></div>
+    <div class="footer-links"><a href="#avisos">Avisos</a><a href="#documentos">Documentos</a><a href="#contacto">Contacto</a><a href="admin.html">Administración</a></div>
+  </div>
+  <div class="copyright">© 2026 Escuela Secundaria · Todos los derechos reservados.</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

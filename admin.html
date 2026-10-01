@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Administración | Escuela Secundaria</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark">S</span><span><strong>Escuela Secundaria</strong><small>Panel administrativo</small></span></a><a class="btn secondary" href="index.html">Ver sitio público</a></div></header>
+<main class="section"><div class="container">
+<span class="eyebrow">PANEL DE ADMINISTRACIÓN · DEMO</span><h1 style="font-size:42px;color:#17324d">Administrar contenido</h1>
+<p style="color:#667585;max-width:700px">Esta pantalla es el punto de partida del administrador. En la siguiente fase se conectará a autenticación y base de datos para que personal autorizado pueda publicar contenido.</p>
+<div class="notice-grid" style="margin-top:30px">
+<div class="info-card"><h3>📢 Avisos</h3><p>Crear, editar y retirar comunicados.</p><button class="btn primary" onclick="demo('avisos')">Administrar</button></div>
+<div class="info-card"><h3>📅 Calendario</h3><p>Agregar reuniones, eventos y fechas.</p><button class="btn primary" onclick="demo('calendario')">Administrar</button></div>
+<div class="info-card"><h3>📄 Documentos</h3><p>Subir circulares y formatos PDF.</p><button class="btn primary" onclick="demo('documentos')">Administrar</button></div>
+</div>
+</div></main>
+<script>function demo(x){alert("Módulo de "+x+" listo para conectar con base de datos y autenticación.");}</script>
+</body></html>
