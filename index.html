@@ -15,14 +15,53 @@
       <span><strong>Secundaria 7</strong><small>Portal para Padres</small>
     </a>
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
-    <nav id="mainNav">
-      <a href="#inicio">Inicio</a>
-      <a href="#escuela">La escuela</a>
+ <nav class="main-nav">
+
+  <a href="#inicio">Inicio</a>
+
+  <details class="nav-dropdown">
+    <summary>La escuela</summary>
+    <div class="dropdown-menu">
+      <a href="#historia">Historia</a>
+      <a href="#mision">Misión y visión</a>
+      <a href="#autoridades">Autoridades</a>
+      <a href="#instalaciones">Instalaciones</a>
+    </div>
+  </details>
+
+  <details class="nav-dropdown">
+    <summary>Padres de familia</summary>
+    <div class="dropdown-menu">
       <a href="#avisos">Avisos</a>
       <a href="#calendario">Calendario</a>
-      <a href="#documentos">Documentos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+      <a href="#reglamento">Reglamento</a>
+      <a href="#requisitos">Requisitos</a>
+      <a href="#preguntas">Preguntas frecuentes</a>
+    </div>
+  </details>
+
+  <details class="nav-dropdown">
+    <summary>Alumnos</summary>
+    <div class="dropdown-menu">
+      <a href="#horarios">Horarios</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#materiales">Materiales</a>
+    </div>
+  </details>
+
+  <details class="nav-dropdown">
+    <summary>Documentos</summary>
+    <div class="dropdown-menu">
+      <a href="#circulares">Circulares</a>
+      <a href="#formatos">Formatos</a>
+      <a href="#guias">Guías</a>
+      <a href="#descargas">Descargas</a>
+    </div>
+  </details>
+
+  <a href="#contacto">Contacto</a>
+
+</nav>
   </div>
 </header>
 
