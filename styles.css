@@ -1,5 +1,5 @@
 :root{
-  --navy:#17324d;--blue:#2563a6;--sky:#eaf3fb;--gold:#d6a62c;--ink:#1d2935;
+  --navy:#302B8F;--blue:#3831A4;--sky:#F1F0FF;--gold:#F4D300;--ink:#1d2935;
   --muted:#667585;--line:#dfe7ee;--white:#fff;--soft:#f6f8fa;--shadow:0 12px 30px rgba(24,48,72,.09);
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
@@ -24,3 +24,7 @@ footer{background:var(--navy);color:#dce7f0}.footer-inner{padding:42px 0;display
 @media(max-width:520px){.notice-grid,.document-grid{grid-template-columns:1fr}.calendar-item{grid-template-columns:62px 1fr}.calendar-item .type{display:none}.footer-inner{flex-direction:column}.hero h1{font-size:40px}}
 
 .school-name{display:block;font-weight:inherit}.contact-list p{word-break:break-word}
+.school-logo{width:48px; height:58px; object-fit:contain; display:block;}
+.school-name{display:block;}
+.hero h1 .school-name{font-weight:800;}
+.brand strong{letter-spacing:.01em;}
