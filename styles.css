@@ -28,3 +28,103 @@ footer{background:var(--navy);color:#dce7f0}.footer-inner{padding:42px 0;display
 .school-name{display:block;}
 .hero h1 .school-name{font-weight:800;}
 .brand strong{letter-spacing:.01em;}
+/* =========================================
+   MENÚ PRINCIPAL PROFESIONAL
+   ========================================= */
+
+.main-nav{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.main-nav > a,
+.nav-dropdown > summary{
+  color:var(--navy);
+  text-decoration:none;
+  font-weight:700;
+  font-size:.95rem;
+  padding:10px 12px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:.2s ease;
+  list-style:none;
+}
+
+.main-nav > a:hover,
+.nav-dropdown > summary:hover{
+  background:var(--sky);
+  color:var(--blue);
+}
+
+/* Ocultar la flecha predeterminada */
+.nav-dropdown > summary::-webkit-details-marker{
+  display:none;
+}
+
+.nav-dropdown > summary::after{
+  content:"▾";
+  font-size:.7rem;
+  margin-left:6px;
+}
+
+/* Menú desplegable */
+.nav-dropdown{
+  position:relative;
+}
+
+.dropdown-menu{
+  position:absolute;
+  top:calc(100% + 6px);
+  left:0;
+  min-width:210px;
+  background:#fff;
+  border:1px solid rgba(48,43,143,.12);
+  border-radius:12px;
+  padding:8px;
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+  z-index:1000;
+}
+
+.dropdown-menu a{
+  display:block;
+  color:var(--navy);
+  text-decoration:none;
+  padding:10px 12px;
+  border-radius:8px;
+  font-size:.92rem;
+  font-weight:600;
+  transition:.2s ease;
+}
+
+.dropdown-menu a:hover{
+  background:var(--sky);
+  color:var(--blue);
+}
+
+/* En móvil */
+@media (max-width:760px){
+
+  .main-nav{
+    width:100%;
+    flex-direction:column;
+    align-items:stretch;
+    gap:4px;
+  }
+
+  .main-nav > a,
+  .nav-dropdown > summary{
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .dropdown-menu{
+    position:static;
+    margin:4px 0 6px;
+    box-shadow:none;
+    border-radius:10px;
+  }
+
+}
